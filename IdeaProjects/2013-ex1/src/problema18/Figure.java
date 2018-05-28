@@ -1,10 +1,9 @@
 package problema18;
 
 public abstract class Figure {
-    public void clickButtonOn() {}
-    public void drag() {}
-    public void display() {}
-    public void drop() {}
-    public void move() {}
-    public void scale() {}
+    public abstract void clickButtonOn();
+    public abstract void drag();
+    public abstract void display();
+
+    public abstract InteractionFactory makeInteraction();
 }
